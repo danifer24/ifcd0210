@@ -21,5 +21,3 @@ for ($i = 0; $i < $count($temperaturas); $i++) {
     $min = $temperaturas[$i] >= $min ? $min : $temperaturas[$i];
     $suma = $suma + $temperaturas[$i];
 }
-
-echo ""

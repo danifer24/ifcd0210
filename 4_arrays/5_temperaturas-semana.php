@@ -16,5 +16,5 @@ $dias = ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domin
 $temperaturas = [];
 
 foreach ($variable as $value) {
-    $temperaturas.push($value => rand(1,15));
+   
 }
