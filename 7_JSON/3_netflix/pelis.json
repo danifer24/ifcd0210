@@ -1,0 +1,31 @@
+[
+    {
+        "titulo": "El señor de los anillos",
+        "año": 2001,
+        "director": "Peter Jackson",
+        "genero": [
+            "fantasia",
+            "aventura",
+            "accion"
+        ]
+    },
+    {
+        "titulo": "El gigante de hierro",
+        "año": 1999,
+        "director": "X",
+        "genero": [
+            "animacion",
+            "infantil"
+        ]
+    },
+    {
+        "titulo": "Alien",
+        "año": 1979,
+        "director": "Ridley Scott",
+        "genero": [
+            "sci-fi",
+            "terror",
+            "fantasia"
+        ]
+    }
+]
