@@ -3,7 +3,7 @@
         "titulo": "El señor de los anillos",
         "año": 2001,
         "director": "Peter Jackson",
-        "genero": [
+        "generos": [
             "fantasia",
             "aventura",
             "accion"
@@ -13,7 +13,7 @@
         "titulo": "El gigante de hierro",
         "año": 1999,
         "director": "X",
-        "genero": [
+        "generos": [
             "animacion",
             "infantil"
         ]
@@ -22,7 +22,7 @@
         "titulo": "Alien",
         "año": 1979,
         "director": "Ridley Scott",
-        "genero": [
+        "generos": [
             "sci-fi",
             "terror",
             "fantasia"
