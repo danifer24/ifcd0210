@@ -11,26 +11,28 @@ $netflix_array = json_decode($netflix, true);
 
 function mostrarPelis($array)
 {
-    echo "<table border>
-        <tr>
-        <th>Título</th>
-        <th>Año</th>
-        <th>Director</th>
-        <th>Género</th>
-    </tr>";
+    // Contenedor principal para todas las tarjetas (será nuestro flex container)
+    echo "<div class='peliculas-container'>";
+
     foreach ($array as $peli) {
-        echo "
-            <tr>
-                <td> $peli[titulo] </td>
-                <td> $peli[año]</td>
-                <td> $peli[director]</td>";
-        echo "<td>";
+        
+        // Div para cada tarjeta individual (será un flex item)
+        echo "<div class='pelicula-card'";
+
+        // --- Contenido de la tarjeta ---
+
+        // Titulo
+        echo "<h2> $peli[titulo] </h2>";
+
+        // Año y director
+        echo "<p><strong>Año: </strong><p> $peli[año]";
+        echo "<p><strong>Director: </strong><p> $peli[director]";
+
         foreach ($peli["generos"] as $genero) {
             echo "$genero ";
         }
-        echo "</td>";
     }
-    echo "</table>";
+    
 }
 
 //Opcionales:
@@ -58,11 +60,12 @@ function filtrarPelis($genero)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>Document</title>
 </head>
 
 <body>
-
+    <h1>Lista de Peliculas</h1>
     <?php
     if (!isset($_GET["genero"]) || empty($_GET["genero"])) {
 
